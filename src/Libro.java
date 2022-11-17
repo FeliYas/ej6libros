@@ -1,15 +1,6 @@
 public class Libro {
-    private String materia;
     private int plazo;
     private int capitulo;
-
-    public String getMateria() {
-        return materia;
-    }
-
-    public void setMateria(String materia) {
-        this.materia = materia;
-    }
 
     public int getPlazo() {
         return plazo;
@@ -19,17 +10,19 @@ public class Libro {
         this.plazo = plazo;
     }
 
+
+
+
+    Libro(int plazo, int capitulo){
+        setPlazo(plazo);
+        setCapitulo(capitulo);
+    }
+
     public int getCapitulo() {
         return capitulo;
     }
 
     public void setCapitulo(int capitulo) {
         this.capitulo = capitulo;
-    }
-
-    Libro(String materia, int plazo, int capitulo){
-        setMateria(materia);
-        setPlazo(plazo);
-        setCapitulo(capitulo);
     }
 }
